@@ -1,0 +1,41 @@
+.button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: @primarylighter;
+  }
+
+  &:focus {
+    background-color: @primarylighter;
+  }
+
+  &:active {
+    background-color: @primarydarker;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.page-body {
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.strikethrough-text {
+  color: @primary;
+  text-decoration: line-through;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
