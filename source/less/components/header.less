@@ -9,15 +9,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
     padding: 0 40px;
+    justify-content: space-between;
   }
 }
 
 .header__logo {
+  text-decoration: none;
   margin-right: auto;
   padding: 12px;
-  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -54,7 +54,7 @@
     display: block;
     font-size: 24px;
     line-height: 24px;
-    color: @base-black;
+    color: @black;
   }
 }
 
@@ -67,7 +67,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    color: @base-black;
+    color: @black;
   }
 }
 
@@ -80,7 +80,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    color: @base-black;
+    color: @black;
     margin-left: 20px;
     font-weight: 400;
   }
@@ -103,9 +103,9 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: @base-white;
+    background-color: @white;
     z-index: 99;
-    border-bottom: 1px solid @primary-lighter;
+    border-bottom: 1px solid @lightgrey;
     flex-direction: column;
   }
 }

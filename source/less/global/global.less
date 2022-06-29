@@ -1,50 +1,41 @@
-*,
-*:after,
-*:before {
-  padding: 0;
-  margin: 0;
-}
+.button {
+  cursor: pointer;
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+  &:hover {
+    background-color: @primarylighter;
+  }
 
-html {
-    height: 100%;
-}
-  
-body {
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-size: 14px;
-    color: @base-black;
-    background-color: @base-white;
-    margin: 0 auto;
-}
+  &:focus {
+    background-color: @primarylighter;
+  }
 
-img {
-    max-width: 100%;
-    object-fit: contain;
+  &:active {
+    background-color: @primarydarker;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
 }
 
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-  
-    @media (max-width: 1440px) {
-      max-width: 768px;
-    }
-  
-    @media (max-width: 768px) {
-      max-width: 320px;
-    }
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.page-body {
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.strikethrough-text {
+  color: @primary;
+  text-decoration: line-through;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
