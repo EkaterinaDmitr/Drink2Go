@@ -6,8 +6,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1011px;
-    margin: 0 0 0 auto;
+    // width: 1011px;
+    // margin: 0 0 0 auto;
   }
 }
 
@@ -57,7 +57,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-row-gap: 20px;
     justify-content: center;
     margin-bottom: 30px;
     justify-items: center;
@@ -87,7 +87,6 @@
     box-sizing: border-box;
     width: 350px;
     padding: 50px 30px 30px;
-    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,6 +145,7 @@
   font-size: 14px;
   line-height: 20px;
   color: @white;
+  text-decoration: none;
   background: no-repeat 20px 10px url("../../img/cardbutton.png") @primary;
   border: none;
   border-radius: 4px;
@@ -162,4 +162,11 @@
   @media (min-width: @desktop-width) {
     display: block;
   }
+}
+
+.cards__link {
+  display: flex;
+  flex-direction: column;
+  color: @black;
+  text-decoration: none;
 }

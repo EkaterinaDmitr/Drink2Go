@@ -1,0 +1,21 @@
+.map {
+    height: 420px;
+    background-color: @lavenderbg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../img/map-bg-mobile.png");
+  
+    @media (min-width: @tablet-width) {
+      height: 480px;
+      margin-bottom: 22px;
+      background-image: url("../../img/map-bg-tablet.png");
+    }
+  
+    @media (min-width: @desktop-width) {
+      grid-area: map;
+      height: 540px;
+      margin: 0;
+      background-image: url("../../img/map-bg-desctop.png");
+    }
+  
+  }
