@@ -14,7 +14,7 @@
   @media (min-width: @tablet-width) {
     border: none;
     justify-content: space-between;
-    padding: 40px 20px 10px;
+    padding: 21px 20px 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,7 +36,7 @@
   @media (min-width: @desktop-width) {
     width: 318px;
     flex-wrap: wrap;
-    margin-bottom: 47px;
+    margin-bottom: 65px;
   }
 }
 
@@ -73,6 +73,17 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+.footer__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    font-family: "Montserrat", sans-serif;
+    display: contents;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .footer__social-link {
@@ -198,7 +209,7 @@
   background: left top no-repeat url("../../img/phone.png");
 }
 
-.footer__academy {
+.footer__copyright {
   padding: 10px 20px 20px;
   text-align: center;
 
@@ -212,7 +223,7 @@
   }
 }
 
-.footer__academy-link {
+.footer__copyright-link {
   display: block;
   font-size: 12px;
   line-height: 16px;
@@ -253,24 +264,24 @@
   }
 }
 
-.footer__academy-link:hover path {
+.footer__copyright-link:hover path {
   fill: @primarylighter;
 }
 
-.footer__academy-link:focus path {
+.footer__copyright-link:focus path {
   fill: @primarylighter;
 }
 
-.footer__academy-link:active path {
+.footer__copyright-link:active path {
   fill: @primarydarker;
 }
 
-.footer__academy-logo {
+.footer__acopyright-logo {
   margin-left: 2px;
   margin-bottom: -4px;
 }
 
-.footer__academy-span {
+.footer__copyright-span {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
